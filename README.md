@@ -36,7 +36,7 @@ To your bower.json file. Then run
 bower install
 ```
 
-This will copy the angular-bootstrap-datetimepicker files into your components folder, along with its dependencies.
+This will copy the angular-sortable-column files into your components folder, along with its dependencies.
 
 Load the script files in your application:
 ```html
@@ -53,7 +53,7 @@ var myAppModule = angular.module('MyApp', ['ui.sortableColumn'])
 Apply the directive to your form elements:
 
 ```html
-<th data-sortable-column="{ title : 'Click Me', property: 'id' }"></datetimepicker>
+<th data-sortable-column="{ title : 'Click Me', property: 'id' }"></th>
 ```
 
 ## Route parameters as included
