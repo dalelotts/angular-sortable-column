@@ -1,9 +1,9 @@
 # Angular sortable column
 ================================
 
-Native AngularJS sortable column directive
-Modeled after the [Grails sortableColumn tag] (http://grails.org/doc/latest/ref/Tags/sortableColumn.html)
+Native AngularJS sortable column directive that is modeled after the [Grails sortableColumn tag] (http://grails.org/doc/latest/ref/Tags/sortableColumn.html)
 
+[![Build Status](https://travis-ci.org/dalelotts/angular-sortable-column.png?branch=master)](https://travis-ci.org/dalelotts/angular-sortable-column)
 
 #Dependencies
 
@@ -55,10 +55,6 @@ Apply the directive to your form elements:
 ```html
 <th data-sortable-column="{ title : 'Click Me', property: 'id' }"></th>
 ```
-
-## Route parameters as included
-
-To
 
 ## Options
 
