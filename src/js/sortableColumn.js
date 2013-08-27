@@ -42,7 +42,7 @@ angular.module('ui.sortableColumn', [])
 
     return {
       restrict: 'A',
-      /*scope: true,*/
+      scope: true,
       template: "<a data-ng-href='{{ href }}' >{{ title }}</a>",
       link: function (scope, element, attrs) {
 
