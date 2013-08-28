@@ -1,6 +1,6 @@
 /*globals $, module, describe, it, expect, beforeEach, inject */
 /**
- * @license angular-bootstrap-datetimepicker
+ * @license angular-sortable-column
  * (c) 2013 Knight Rider Consulting, Inc. http://www.knightrider.com
  * License: MIT
  */

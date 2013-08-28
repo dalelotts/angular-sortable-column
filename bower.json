@@ -1,6 +1,6 @@
 {
-  "name": "angular-bootstrap-datetimepicker",
-  "version": "0.1.0",
+  "name": "angular-sortable-column",
+  "version": "0.1.2",
   "description": "This angular directive emulates the Grails sortableColumn tag.",
   "author": "https://github.com/dalelotts/angular-sortable-column/graphs/contributors",
   "license": "MIT",
