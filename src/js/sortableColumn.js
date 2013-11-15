@@ -92,6 +92,8 @@ angular.module('ui.sortableColumn', [])
         scope.href = configuration.prefix + $location.path() + parameters;
         scope.title = configuration.title;
 
+        element.addClass('sortable');
+
         element.removeClass('sorted');
         element.removeClass('asc');
         element.removeClass('desc');
