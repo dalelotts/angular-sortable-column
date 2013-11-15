@@ -1,6 +1,6 @@
 {
   "name": "angular-sortable-column",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "This angular directive emulates the Grails sortableColumn tag.",
   "author": "https://github.com/dalelotts/angular-sortable-column/graphs/contributors",
   "license": "MIT",
