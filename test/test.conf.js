@@ -14,8 +14,9 @@ basePath = '..';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  'bower_components/jquery/jquery.js',
-  'https://ajax.googleapis.com/ajax/libs/angularjs/1.1.3/angular.js',
+  'bower_components/jquery/dist/jquery.js',
+  'bower_components/angular/angular.js',
+  'bower_components/angular-route/angular-route.js',
   'bower_components/angular-mocks/angular-mocks.js',
   'src/js/sortableColumn.js',
   'test/*.spec.js'

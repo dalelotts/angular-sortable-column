@@ -13,7 +13,7 @@
  *    @since        2013-Jul-8
  */
 
-angular.module('ui.sortableColumn', [])
+angular.module('ui.sortableColumn', ['ngRoute'])
   .constant('sortableColumnConfig', {
     defaultOrder: 'asc', // default order for the property; choose between asc (default if not provided) and desc
     exclude: [], // Any parameters that should be excluded from parameters list generated from route params.
