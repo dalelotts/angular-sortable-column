@@ -22,23 +22,23 @@ angular.module('ui.sortableColumn', [])
     property: undefined, // name of the property relating to the column to sort
     title: undefined // title caption for the column (text of the link)
   })
-  .constant('sortableColumnConfigValidation', function (configuration) {
+  .directive('sortableColumn', [ '$route', '$location', '$timeout', 'sortableColumnConfig', function ($route, $location, $timeout, defaultConfig) {
     "use strict";
-    if (!configuration.title) {
-      throw ("title must be specified");
-    }
-    if (!configuration.property) {
-      throw ("property must be specified");
-    }
-    if (!configuration.defaultOrder) {
-      throw ("defaultOrder must be specified");
-    }
-    if (configuration.defaultOrder !== 'asc' && configuration.defaultOrder !== 'desc') {
-      throw ("defaultOrder must be asc or desc");
-    }
-  })
-  .directive('sortableColumn', [ '$route', '$location', '$timeout', 'sortableColumnConfig', 'sortableColumnConfigValidation', function ($route, $location, $timeout, defaultConfig, validateConfigurationFunction) {
-    "use strict";
+
+    var validateConfiguration = function (configuration) {
+      if (!configuration.title) {
+        throw ("title must be specified");
+      }
+      if (!configuration.property) {
+        throw ("property must be specified");
+      }
+      if (!configuration.defaultOrder) {
+        throw ("defaultOrder must be specified");
+      }
+      if (configuration.defaultOrder !== 'asc' && configuration.defaultOrder !== 'desc') {
+        throw ("defaultOrder must be asc or desc");
+      }
+    };
 
     return {
       restrict: 'A',
@@ -54,7 +54,7 @@ angular.module('ui.sortableColumn', [])
 
         var configuration = angular.extend({}, defaultConfig, directiveConfig);
 
-        validateConfigurationFunction(configuration);
+        validateConfiguration(configuration);
 
         var params = angular.extend({}, configuration.params || {});
 

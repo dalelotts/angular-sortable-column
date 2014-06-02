@@ -1,4 +1,4 @@
-# Angular sortable column
+# Angular sortable column  0.1.4
 ================================
 
 Native AngularJS sortable column directive that is modeled after the [Grails sortableColumn tag] (http://grails.org/doc/latest/ref/Tags/sortableColumn.html)
